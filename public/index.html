@@ -10,8 +10,11 @@
     <meta name="keywords" content="keywords,here">
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="//cdn.muicss.com/mui-0.9.10/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="/style/jsonviewer.css" rel="stylesheet" type="text/css" />
     <script src="//cdn.muicss.com/mui-0.9.10/js/mui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    <script src="lib/jsonviewer.js"></script>
     <script src="scripts/index.js"></script>
 </head>
 
@@ -36,16 +39,24 @@
             <div class="mui-row">
                 <div class="mui-col-md-12">
                     <div class="mui-textfield">
-                        <textarea type="text" rows="25"></textarea>
+                        <textarea type="text" class="source-material" rows="25"></textarea>
                         <label>Body of Text</label>
                     </div>
                 </div>
             </div>
             <div class="mui-row">
-                <div class="mui-col-md-12">
-                    <button class="mui-btn mui-btn--primary mui-btn--raised"><i class="fa fa-gears"></i> Do thangz</button>
+                <div class="mui-col-md-4">
+                    <button class="mui-btn mui-btn--primary mui-btn--raised make-ngrams"><i class="fa fa-gears"></i> Make nGrams</button>
+                </div>
+                <div class="mui-col-md-4">
+                    <button class="mui-btn mui-btn--primary mui-btn--raised load-speech"><i class="fa fa-gears"></i>Load Speech</button>
                 </div>
             </div>
+        </div>
+        <div class="mui-panel">
+            <label>Output</label>
+            <pre class="output">
+            </pre>
         </div>
     </div>
 

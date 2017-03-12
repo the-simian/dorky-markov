@@ -45,18 +45,33 @@
                 </div>
             </div>
             <div class="mui-row">
-                <div class="mui-col-md-4">
+                <div class="mui-col-md-3">
+                    <button class="mui-btn mui-btn--primary mui-btn--raised load-speech"><i class="fa fa-upload"></i> Load Speech</button>
+                </div>
+                <div class="mui-col-md-3">
                     <button class="mui-btn mui-btn--primary mui-btn--raised make-ngrams"><i class="fa fa-gears"></i> Make nGrams</button>
                 </div>
-                <div class="mui-col-md-4">
-                    <button class="mui-btn mui-btn--primary mui-btn--raised load-speech"><i class="fa fa-gears"></i>Load Speech</button>
+                <div class="mui-col-md-3">
+                    <button class="mui-btn mui-btn--primary mui-btn--raised make-speech"><i class="fa fa-comments"></i> Make Speech</button>
                 </div>
             </div>
         </div>
         <div class="mui-panel">
-            <label>Output</label>
-            <pre class="output">
-            </pre>
+            <div class="mui-row">
+                <div class="mui-col-md-4">
+                    <label>Output</label>
+                </div>
+            </div>
+            <div class="mui-row">
+                <div class="mui-col-md-4">
+                    <label>Ngrams</label>
+                    <pre class="ngram-output"></pre>
+                </div>
+                <div class="mui-col-md-8">
+                    <label>Generated Speech</label>
+                    <div class="speech-output"></div>
+                </div>
+            </div>
         </div>
     </div>
 

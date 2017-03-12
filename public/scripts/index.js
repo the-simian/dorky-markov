@@ -4,7 +4,7 @@
 
 (function(){
 
-  var order = 5;
+  var order = 4;
   currentNGrams = {};
 
 
@@ -48,6 +48,9 @@
   }
 
   function makeNgrams(){
+    order = parseInt($order.val()) || 4;
+
+    console.log(order, $order.val())
     text = $src.val();
     var ngrams = {};
     for(var i=0; i <= text.length - order; i++){
@@ -80,6 +83,7 @@
     $ngramOutput = $('.ngram-output');
     $speechOutput = $('.speech-output');
     $stopSpeech = $('.stop-speech');
+    $order = $('.order');
   }
 
   function bindHandlers(){

@@ -27,7 +27,7 @@
   }
 
   function startSpeaking(result){
-    responsiveVoice.speak(result, 'US English Male', {rate: 0.5});
+    responsiveVoice.speak(result, 'US English Male', {rate: 0.6});
   }
 
   function makeSpeech(){

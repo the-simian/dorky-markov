@@ -4,7 +4,7 @@
 
 (function(){
 
-  var order = 3;
+  var order = 5;
   currentNGrams = {};
 
 

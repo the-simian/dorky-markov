@@ -1,0 +1,29 @@
+{
+  "name": "dorky-markov",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-simian/dorky-markov"
+  },
+  "author": "harlinjesse@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-simian/dorky-markov"
+  },
+  "homepage": "https://github.com/the-simian/dorky-markov#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
+    "cors-anywhere": "^0.4.0",
+    "express": "^4.15.2",
+    "method-override": "^2.3.7",
+    "morgan": "^1.8.1",
+    "response-time": "^2.3.2"
+  }
+}
